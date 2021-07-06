@@ -20,4 +20,7 @@ class IngestorInterface(ABC):
 
     @classmethod
     def can_ingest(cls, path: str) -> boolean:
-        "can_ingest class method will check for correct file extension"
+        "can_ingest classmethod will check for correct file extension"
+        extention = path.split('.')[-1]
+        return extention in allowed_file_extention
+            
