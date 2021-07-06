@@ -8,6 +8,7 @@ IngestorInterface.
 from .IngestorInterface import IngestorInterface
 from typing import List
 from .QuoteModel import QuoteModel
+import os
 
 
 class TXTIngestor(IngestorInterface):
@@ -37,8 +38,11 @@ class TXTIngestor(IngestorInterface):
                 with open(path, 'r') as txt_obj:
                     lines = txt_obj.readlines()
                     for line in iter(lines):
+                        line = line.strip('\n\r').strip()
+                        if len(line) < 3:
+                            continue
                         quote, author = tuple(line.split(' - '))
-                        quote_list.append(QuoteModel(quote.strip, author))
+                        quote_list.append(QuoteModel(quote, author))
 
             return quote_list
         except Exception:
