@@ -14,7 +14,8 @@ class IngestorInterface(ABC):
     """Abstractclass IngestoInterface."""
 
     allowed_file_extention: List[str] = []
-
+    
+    @classmethod
     @abstractmethod
     def parse(cls, path: str) -> List[QuoteModel]:
         """Parse function should be implemented at the stratgy class."""
