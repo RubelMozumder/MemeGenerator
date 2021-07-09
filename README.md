@@ -19,9 +19,11 @@ In [8]: objs[0].author
 Out[8]: 'Skittle'
 
 ```
-### Dependencies
-1. [subprocess](https://docs.python.org/3/library/subprocess.html)
-2. [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html)
+### Dependencies:
+Requirements:
+
+	1. [subprocess](https://docs.python.org/3/library/subprocess.html)
+	2. [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html)
 
 System needs [XpdfReader](https://www.xpdfreader.com/about.html) installed.
 
@@ -52,4 +54,5 @@ Out[10]: './test_meme.jpg'
 
 ### Dependencies
 Requirements:
-1. [PIL] [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+
+	1. [PIL] [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
