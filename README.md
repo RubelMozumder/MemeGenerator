@@ -21,6 +21,30 @@ Out[8]: 'Skittle'
 ```
 
 ## MemeEngine:
+The MemeEngine is build up to work with picture, qoute and the auther of the quote. The general functionality of this module is to receive the picture, quote, and author and return picture with quote and author anchored on it.
+The module also allows to crop the given picture via the parameter `width` of `make_meme()` method.
 
-### TODO: also add one picture using both module `QuoteEngine & MemeEngine`
-The work anchors quote and the corresponding author on a croped pictures. 
+### Usaes of `MemeEngine` module:
+
+Example: The example below is run from the `/src` directory
+```In [2]: import MemeEngine                                                                  
+
+In [3]: import MemeEngine as m                                                             
+
+In [4]: in_path = './_data/photos/dog/xander_2.jpg'                                        
+
+In [6]: out_path = './test_meme.jpg'                                                       
+
+In [7]: quote = 'United we stand, divided we fall.'                                        
+
+In [8]: author = 'Aesop'                                                                   
+
+In [10]: m.MemeEngine(out_path).make_meme(in_path=in_path, text=quote,  
+    ...:                                  author=author, width=400) 
+Out[10]: './test_meme.jpg'
+```
+![imgur](./src/test_meme.jpg)
+
+### Dpenddencies
+Requirements:
+1. [PIL] [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
