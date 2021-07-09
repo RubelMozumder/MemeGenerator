@@ -19,6 +19,11 @@ In [8]: objs[0].author
 Out[8]: 'Skittle'
 
 ```
+### Dependencies
+1. [subprocess](https://docs.python.org/3/library/subprocess.html)
+2. [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html)
+
+System needs [XpdfReader](https://www.xpdfreader.com/about.html) installed.
 
 ## MemeEngine:
 The MemeEngine is build up to work with picture, qoute and the auther of the quote. The general functionality of this module is to receive the picture, quote, and author and return picture with quote and author anchored on it.
@@ -45,6 +50,6 @@ Out[10]: './test_meme.jpg'
 ```
 ![imgur](./src/test_meme.jpg)
 
-### Dpenddencies
+### Dependencies
 Requirements:
 1. [PIL] [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
