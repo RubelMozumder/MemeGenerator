@@ -26,16 +26,11 @@ def setup():
                    './_data/DogQuotes/DogQuotesPDF.pdf',
                    './_data/DogQuotes/DogQuotesCSV.csv']
 
-    # TODO: Use the Ingestor class to parse all files in the
-    # quote_files variable
     quotes = []
     for f in quote_files:
         quotes.extend(Ingestor.parse(f))
 
     images_path = "./_data/photos/dog/"
-
-    # TODO: Use the pythons standard library os class to find all
-    # images within the images images_path directory
        
     imgs = [ f for f in os.listdir(images_path) if len(f.split('.'))>1]
     imgs = [images_path+img for img in imgs]
