@@ -13,7 +13,7 @@ from QuoteEngine import Ingestor
 
 app = Flask(__name__)
 
-meme = MemeEngine('../static')
+meme = MemeEngine('./static')
 
 
 def setup():
