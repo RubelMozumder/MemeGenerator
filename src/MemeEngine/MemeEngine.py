@@ -4,6 +4,9 @@ MemeGenerator class will create a meme from a image in a given path
 and save it to the another given path by 'CreateMeme' method.
 """
 
+import os
+import random
+
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -75,6 +78,10 @@ class MemeEngine():
         author = 'by ' + author
         draw.text((10, 55), author, font=font, fill='blue')
 
-        new_imp.save(self.out_path)
+        out_path = os.path.join(self.out_path,
+                                f'meme_{random.randint(0,100000000)}.png')
+        print('This is the print :', out_path)
+
+        new_imp.save(out_path)
 
         return self.out_path
