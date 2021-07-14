@@ -33,3 +33,10 @@ class QuoteModel:
         Return: instantiated QuoteModel object
         """
         return cls(quote, author)
+
+    def __str__(self):
+        """Prints object attribute.
+        
+        This is helpful for debuging by using the object.__str__() option.
+        """
+        return f"Quote : {self.quote}, Author : {self.author}"
