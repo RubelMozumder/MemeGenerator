@@ -84,4 +84,4 @@ class MemeEngine():
 
         new_imp.save(out_path)
 
-        return self.out_path
+        return out_path
