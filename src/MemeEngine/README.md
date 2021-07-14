@@ -8,7 +8,7 @@ The submodule MemeEngine includes `MemeEngine(out_path)` can be instantiate to r
 returns croped image which is croped according to width and the image provided by user via `in_path`. The methode also maintains ratio of image size.
 
 `make_meme(self, in_path, text, author, and width)`:
-Returns the meme file to the predefined output path provided on the class instantiate.
+Returns the meme file path (`out_path`) to the predefined output path provided on the class instantiate.
 `
 
 ## Usages:
@@ -25,3 +25,7 @@ In [7]: output = MemeEngine.MemeEngine(out_path).make_meme(in_path, text= 'The p
    ...: ur life is to be happy', author= 'DALAI LAMA', width= 400)                         
 This is the print : ./meme_90566441.png
 ```
+
+## Conclusion:
+
+The package generate the meme based on the user given figure paths (input and ouput), width, text, and author.
