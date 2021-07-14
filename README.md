@@ -52,7 +52,34 @@ Out[10]: './test_meme.jpg'
 ```
 ![imgur](./src/test_meme.jpg)
 
+## To create meme randomly or on intended picture
+Run the app from `src` directory.
+```
+python3 app
+```
+Then copy the link past it on the google browser.
+Some free figure links are here
+
+1. [picturei1](https://images.ctfassets.net/2y9b3o528xhq/5sXS0Rr3MEr66P5elfYX7P/3728cc2d85c0979cb29d5cb291369038/mentor.jpg)
+2. [picture2](https://images.ctfassets.net/2y9b3o528xhq/5p7HANmA1jsw8P9EVOeVso/cbfa17357399d99a76d641c777e81a81/self-paced.png)
+
 ### Dependencies
 Requirements:
 
-	1. [PIL] [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+	1. PIL: [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+	2. DOCX: [docx](https://python-docx.readthedocs.io/en/latest/user/install.html)
+	3. Xpdf:
+		For Ubuntu:
+		```
+		$ wget http://security.ubuntu.com/ubuntu/pool/main/p/poppler/libpoppler73_0.62.0-2ubuntu2.12_amd64.deb
+		  
+		$ sudo apt-get install ./libpoppler73_0.62.0-2ubuntu2.12_amd64.deb
+		$ wget http://archive.ubuntu.com/ubuntu/pool/universe/x/xpdf/xpdf_3.04-7_amd64.deb
+		$ sudo apt-get install ./xpdf_3.04-7_amd64.deb
+		```
+		or 
+follow [here](https://www.xpdfreader.com/about.html)
+	4. [Flask](https://flask.palletsprojects.com/en/2.0.x/installation/)
+		
+## Acknowledgement:
+[Udacity](https://www.udacity.com/)

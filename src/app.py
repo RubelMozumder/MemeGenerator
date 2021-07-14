@@ -65,7 +65,7 @@ def meme_post():
     with open(tmp, 'wb') as img_f:
         img_f.write(r.content)
 
-    quote = request.form.get('quote', "")
+    quote = request.form.get('body', "")
     author = request.form.get('author', "")
 
     path = meme.make_meme(tmp, quote, author)
