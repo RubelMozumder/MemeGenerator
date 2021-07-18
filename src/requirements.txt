@@ -1,0 +1,7 @@
+docx==0.2.4
+Flask==1.1.2
+mypy==0.910
+Pillow==7.0.0
+pycodestyle==2.7.0
+pydocstyle==6.1.1
+requests==2.26.0
